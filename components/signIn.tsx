@@ -20,13 +20,13 @@ const SignIn: React.FC<SignInProps> = ({setIsSignedIn}) => {
     }
 
     const handleChangeUsername = () => {
+        // Regex Logic to check if the username is longer than 5 characters
 
-        
         setUsername(username);
     }
 
     const handleChangePassword = () => {
-
+        // Regex Logic to check if the password matches criteria (If statement to return a error message of incorrect format with the criteria listed)
 
         setPassword(password);
     }
@@ -34,7 +34,7 @@ const SignIn: React.FC<SignInProps> = ({setIsSignedIn}) => {
     return (
         <View style={styles.container}>
             <Text>Sign In</Text>
-            <TextInput placeholder='Username' value={username} onChangeText={setUsername} />
+            <TextInput placeholder='Username' value={username} onChangeText={handleChangeUsername} />
             <TextInput placeholder='Password' value={password} onChangeText={handleChangePassword} secureTextEntry={true} />
             <Button title='Sign In' onPress={handleSignIn} />
             {!isValid && <Text>{errorMessage}</Text>}
