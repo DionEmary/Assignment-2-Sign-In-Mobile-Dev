@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import WelcomeMessage from '../components/welcomeMessage';
+import SignIn from '../components/signIn';
+import { useState } from 'react';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <WelcomeMessage />
-      <StatusBar style="auto" />
-    </View>
-  );
+    const [isSignedIn, setIsSignedIn] = useState<boolean>(false);
+
+    return (
+        <View style={styles.container}>
+            {isSignedIn ? <WelcomeMessage /> : <SignIn setIsSignedIn={setIsSignedIn} />}
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
