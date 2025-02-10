@@ -1,22 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import WelcomeMessage from './components/welcomeMessage';
+// import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, Text, View } from 'react-native';
+// import WelcomeMessage from './components/welcomeMessage';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <WelcomeMessage />
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text>Open up App.tsx to start working on your app!</Text>
+//       <WelcomeMessage />
+//       <StatusBar style="auto" />
+//     </View>
+//   );
+// }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
+
+import { ExpoRouter } from "expo-router";
+
+export default ExpoRouter;
