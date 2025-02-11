@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
   linkText: {
     color: 'blue',
     textDecorationLine: 'underline',
+    fontWeight: '500',
   },
 });
 
