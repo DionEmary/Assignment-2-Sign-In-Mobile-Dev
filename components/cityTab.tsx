@@ -10,23 +10,23 @@ const CityTabs = () => {
         Calgary: {
             image: require('../assets/calgary.jpg'),
             link: 'https://www.calgary.ca/home.html',
-            info: 'Calgary trivia here',
+            info: 'Calgary, Alberta, is known as "Cowtown" due to its deep-rooted connection to the cattle industry and its world-famous Calgary Stampede, an annual rodeo and exhibition that attracts over a million visitors. Calgary is a hub for innovation and economic growth, particularly in the energy sector.',
         },
         Edmonton: {
             image: require('../assets/edmonton.jpg'),
             link: 'https://www.edmonton.ca/',
-            info: 'Edmonton trivia here',
+            info: 'Edmonton, the capital city of Alberta, Canada, is often called the "Gateway to the North" due to its strategic location as a hub for oil and gas industries and its proximity to the northern wilderness. The city\'s rich cultural scene includes the Edmonton International Fringe Festival, one of the largest fringe theater festivals in the world, attracting artists and visitors from all over the globe.',
         }
     }
 
     return (
-        <View>
-            <View>
+        <View style={styles.container}>
+            <View style={styles.tabContainer}>
                 <TouchableOpacity style={[styles.tab, city === 'Calgary' && styles.activeTab]} onPress={() => setCity('Calgary')}>
-                    <Text>Calgary</Text>
+                    <Text style={[styles.tabText, city === 'Calgary' && styles.activeText]}>Calgary</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.tab, city === 'Edmonton' && styles.activeTab]} onPress={() => setCity('Edmonton')}>
-                    <Text>Edmonton</Text>
+                    <Text style={[styles.tabText, city === 'Edmonton' && styles.activeText]}>Edmonton</Text>
                 </TouchableOpacity>
             </View>
             <Image source={cityInfo[city].image} style={styles.cityImage} />
@@ -39,12 +39,12 @@ const CityTabs = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: "space-between",
-      alignItems: 'center',    
-      padding: 20,
+      alignItems: 'center'
     },
     tabContainer: {
       flexDirection: 'row',
+      justifyContent: "center",
+      gap: 5,
     },
     tab: {
       alignItems: 'center',
@@ -54,18 +54,23 @@ const styles = StyleSheet.create({
       borderRadius: 20,
       marginBottom: 5,
       marginTop: 5,
+      width: 120
     },
     activeTab: {
       backgroundColor: '#4dd2ff',
+      color: '#fff'
     },
     tabText: {
       fontSize: 16,
     },
+    activeText: {
+      color: '#fff',
+    },
     cityImage: {
       width: 300,
       height: 200,
-      marginTop: 50,
-      marginBottom: 50,
+      marginTop: 25,
+      marginBottom: 20,
       borderRadius: 20,
     },
     
