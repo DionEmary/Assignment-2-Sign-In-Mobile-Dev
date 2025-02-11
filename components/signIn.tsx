@@ -19,16 +19,16 @@ const SignIn: React.FC<SignInProps> = ({setIsSignedIn}) => {
         }
     }
 
-    const handleChangeUsername = () => {
+    const handleChangeUsername = (input: string) => {
         // Regex Logic to check if the username is longer than 5 characters
 
-        setUsername(username);
+        setUsername(input);
     }
 
-    const handleChangePassword = () => {
+    const handleChangePassword = (input: string) => {
         // Regex Logic to check if the password matches criteria (If statement to return a error message of incorrect format with the criteria listed)
 
-        setPassword(password);
+        setPassword(input);
     }
 
     return (
@@ -51,10 +51,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  button: {
-    padding: 10,
-    margin: 10,
-    backgroundColor: 'lightgray',
-    borderRadius: 5,
-  }
+  
 });
