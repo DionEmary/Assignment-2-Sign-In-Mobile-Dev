@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image, ScrollView } from 'react-native';
 import CityInfo from './cityInfo';
 import CityLink from './cityLink';
 
@@ -29,9 +29,11 @@ const CityTabs = () => {
                     <Text style={[styles.tabText, city === 'Edmonton' && styles.activeText]}>Edmonton</Text>
                 </TouchableOpacity>
             </View>
-            <Image source={cityInfo[city].image} style={styles.cityImage} />
-            <CityInfo info={cityInfo[city].info} />
-            <CityLink link={cityInfo[city].link} />
+            <ScrollView>
+              <Image source={cityInfo[city].image} style={styles.cityImage} />
+              <CityInfo info={cityInfo[city].info} />
+              <CityLink link={cityInfo[city].link} />
+            </ScrollView>
         </View>
     );
 }
