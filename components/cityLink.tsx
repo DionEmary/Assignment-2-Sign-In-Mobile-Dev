@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     color: '#006080',
     textDecorationLine: 'underline',
     fontWeight: '500',
-    marginHorizontal: 10,
   },
 });
 

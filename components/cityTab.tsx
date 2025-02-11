@@ -50,10 +50,9 @@ const styles = StyleSheet.create({
     tab: {
       alignItems: 'center',
       paddingVertical: 15,
-      paddingHorizontal: 5,
-      marginHorizontal: 10,
+      paddingHorizontal: 20,
       backgroundColor: '#ccf2ff',
-      borderRadius: 10,
+      borderRadius: 20,
     },
     activeTab: {
       backgroundColor: '#4dd2ff',
@@ -68,6 +67,7 @@ const styles = StyleSheet.create({
       marginBottom: 25,
       borderRadius: 20,
     },
+    
   });
 
 export default CityTabs;
