@@ -39,15 +39,19 @@ const CityTabs = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      alignItems: 'center',
+      justifyContent: "space-between",
+      alignItems: 'center',    
       padding: 20,
     },
     tabContainer: {
       flexDirection: 'row',
       marginBottom: 20,
+      justifyContent: 'space-evenly',
     },
     tab: {
-      padding: 10,
+      alignItems: 'center',
+      paddingVertical: 15,
+      paddingHorizontal: 5,
       marginHorizontal: 10,
       backgroundColor: 'lightgray',
       borderRadius: 5,

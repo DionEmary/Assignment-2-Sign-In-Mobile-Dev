@@ -13,12 +13,13 @@ export default function WelcomeMessage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     paddingVertical: 40,
+    paddingHorizontal: 20,
   },
   welcomeText: {
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: 'bold',
     color: 'blue',
   },
