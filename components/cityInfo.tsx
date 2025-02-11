@@ -15,7 +15,7 @@ const CityInfo: React.FC<CityInfoProps> = ({ info }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 15,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#ccf2ff',
     borderRadius: 8,
     marginVertical: 10,
     width: '90%',

@@ -13,7 +13,7 @@ export default function WelcomeMessage() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
     alignItems: 'center',
     paddingVertical: 40,
     paddingHorizontal: 20,
@@ -21,6 +21,6 @@ const styles = StyleSheet.create({
   welcomeText: {
     fontSize: 26,
     fontWeight: 'bold',
-    color: 'blue',
+    color: '#0099cc',
   },
 });

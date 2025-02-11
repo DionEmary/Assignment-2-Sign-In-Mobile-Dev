@@ -14,7 +14,8 @@ const CityLink: React.FC<LinkTextProps> = ({ link }) => {
 
 const styles = StyleSheet.create({
   linkText: {
-    color: 'blue',
+    marginTop: 25,
+    color: '#006080',
     textDecorationLine: 'underline',
     fontWeight: '500',
     marginHorizontal: 10,
