@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     },
     tabContainer: {
       flexDirection: 'row',
-      marginBottom: 20,
     },
     tab: {
       alignItems: 'center',
@@ -53,6 +52,8 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       backgroundColor: '#ccf2ff',
       borderRadius: 20,
+      marginBottom: 5,
+      marginTop: 5,
     },
     activeTab: {
       backgroundColor: '#4dd2ff',
@@ -63,8 +64,8 @@ const styles = StyleSheet.create({
     cityImage: {
       width: 300,
       height: 200,
-      marginTop: 25,
-      marginBottom: 25,
+      marginTop: 50,
+      marginBottom: 50,
       borderRadius: 20,
     },
     
