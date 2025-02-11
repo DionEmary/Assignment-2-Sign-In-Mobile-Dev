@@ -14,10 +14,14 @@ const CityInfo: React.FC<CityInfoProps> = ({ info }) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    padding: 15,
     backgroundColor: '#f0f0f0',
     borderRadius: 8,
     marginVertical: 10,
+    width: '90%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 10,
   },
 });
 

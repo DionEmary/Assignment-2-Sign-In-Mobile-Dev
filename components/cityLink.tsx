@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
     color: 'blue',
     textDecorationLine: 'underline',
     fontWeight: '500',
+    marginHorizontal: 10,
   },
 });
 

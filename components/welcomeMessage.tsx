@@ -12,9 +12,10 @@ export default function WelcomeMessage() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
-    marginBottom: 20,
+    flex: 1,
+    justifyContent: 'center',
     alignItems: 'center',
+    paddingVertical: 40,
   },
   welcomeText: {
     fontSize: 24,
