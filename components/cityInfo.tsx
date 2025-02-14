@@ -18,7 +18,7 @@ const CityInfo: React.FC<CityInfoProps> = ({ info }) => {
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 20,
-    width: '90%',
+    width: '95%',
     alignItems: 'center',
     justifyContent: 'center',
     left: -10,
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
-    maxWidth: '90%',
+    maxWidth: '100%',
   },
   text: {
     color: '#fff',
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   tail: {
     position: 'absolute',
     top: -10,
-    left: 40,
+    left: 70,
     width: 0,
     height: 0,
     borderLeftWidth: 10,
